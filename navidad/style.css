@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    background-color: #1a1a1a;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+}
+
+body {
+    background-image: url('img/Paisajes_de_navidad-d5.webp');
+    background-repeat: repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card {
+    background: url("img/pngtree-snowman-christmas-photo-image_15917397.jpg");
+    text-align: center;
+    background-color: #8ef507;
+    padding: 50px;
+    border-radius: 15px;
+    border: 30px solid #0873ee;
+    box-shadow: 0 0 15px rgba(4, 80, 245, 0.2);
+    max-width: 600px;
+    width: 100%;
+    animation: popIn 1s ease-out;
+}
+h3{
+    font-family: 'Old English Text MT' , serif;
+    color: rgb(11, 12, 12);
+}
+
+h1 {
+    font-family: 'Old English Text MT' , serif;
+    color: #ff3b30;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+p {font-family: 'Old English Text MT' , serif;;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #0c0c0c;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    background-color: #deee05;
+    color: rgb(25, 10, 241);
+    border: 10px solid rgb(221, 21, 204);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #50ec08;
+}
+
+#message {
+    background: url("img/diseno-simplemente-navideno-espacio-texto-tarjeta-felicitacion-invierno-vista-superior_117930-1006.avif");
+    background-color: rgb(236, 240, 10);
+    border: 10px solid rgb(9, 33, 248);
+    border-radius: 15px;
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #d0e60c;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes popIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.snow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.snowflake {
+    position: absolute;
+    top: -10px;
+    color: #0dc0ec;
+    font-size: 24px;
+    animation: fall 10s linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
+}

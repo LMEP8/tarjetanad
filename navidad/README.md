@@ -1,0 +1,2 @@
+# tarjetanad
+version mejorado
